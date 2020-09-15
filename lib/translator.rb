@@ -4,7 +4,6 @@ require "pry"
 
 def load_library(emoticon_yml)
   emoticon_list = YAML.load_file(emoticon_yml)
-  emoticon_list
   new_list = {}
   emoticon_list.each do |emotion, faces|
     if !new_list[emotion]
